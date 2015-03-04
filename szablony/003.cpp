@@ -6,6 +6,7 @@ template <typename T, unsigned X, unsigned Y>
 class Macierz
 {
 public:
+	typedef T type;
 	T wartosc[X][Y];
 };
 
@@ -24,6 +25,7 @@ public:
 int main()
 {
 	Macierz<double,5,1> a;
+	Macierz<double,5,1>::type z;
 	Wektor<double,5>::type b;
 	WektorR<5>::type c;
 	a=b;
